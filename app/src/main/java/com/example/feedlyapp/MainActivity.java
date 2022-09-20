@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        String url = "https://cloud.feedly.com/v3/streams/user%2F4565b0c1-b378-48f3-a53e-351f40719a4b%2Fcategory%2F7be5624b-33f6-48fb-bbc4-ff0e36afea76/contents";
+        String url = " *Insert-url-here* ";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 Map<String, String> headers = new HashMap<String, String>();
-                String access_token = "A6QSp6QuYaOcjrssY6rnHM_lfDYqNy_rgap5acAQPrhrCYS42FVnVwHQ27qOGxq9voO2-_gQt_0kdU_8fH23MdIJZGhUMqjOgGn1KNPhQuFNa0EWvLrrN89VEHqgSMWOFI674XqjRv63Lnj8uCe_uC7gFB7xT8H2VZi1EfKbSVWvQYGr0RpWnFlP79y1pByyJzTm0cO_gFOTw2Pz2Ofz6UhE4Ig3KRQrPc_exVyAfUtvPPDe3exSxfhRYJjQ:feedlydev";
+                String access_token = " *Insert-access-token-here* ";
                 headers.put("Content-Type", "application/json; charset=UTF-8");
                 headers.put("Authorization", "Bearer" + access_token);
                 return headers;
